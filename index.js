@@ -11,15 +11,14 @@ function displayList() {
   books.forEach((item, i) => {
     const bookDiv = document.createElement('div');
     bookDiv.classList.add('book');
-    bookDiv.innerHTML = `
-          <p> Title:${item.title}</p>
-          <p> Author:${item.author}</p>
-          <button data-i="${i}" id="remove">Remove</button>
-          <hr>
+    bookDiv.innerHTML = `<ul>
+          <li>Title:${item.title} By Author:${item.author}   <button data-i="${i}" id="remove">Remove</button> </li>
+          </ul>
         `;
     bookList.appendChild(bookDiv);
   });
 }
+
 // add new book
 function newBook() {
   const title = bookTitle.value;
