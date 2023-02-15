@@ -1,78 +1,221 @@
+/* Only comments */
 * {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.book-collection {
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-
 body {
-  align-items: center;
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   width: 100%;
 }
 
-.line {
-  margin-top: 50px;
-  width: 90px;
-  font-weight: 900;
-  font-size: 10pt;
-}
-
-#books {
-  width: fit-content;
-  margin: 14px 14px 14px 224px;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
-
-.book {
+.nav-head {
+  width: 90%;
+  border: 2px solid #000;
   display: flex;
-  border: 1px solid rgb(15, 15, 15);
-  flex-direction: column;
-  align-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 5%;
+  padding: 8px 20px;
 }
 
-.book ul {
-  gap: 20px;
-  list-style: none;
-  margin: 12px 12px 12px 12px;
-  font-size: smaller;
+h2 {
+  font-size: 34px;
+}
+
+.nav-head h2 {
   font-weight: bold;
+  margin-left: 20px;
+  padding: 0 12px;
 }
 
-.book:nth-child(odd) {
-  background-color: #a3a2a2;
+.nav-item {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+}
+
+.nav-link {
+  list-style-type: none;
+  margin: 0 15px;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #272a31;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-link:nth-child(1),
+.nav-link:nth-child(2) {
+  border-right: 2px solid #272a31;
+  padding-right: 20px;
+}
+
+a:hover {
+  color: blue;
+}
+
+#bookss {
+  width: 100%;
+  text-align: center;
+  margin-top: 8%;
+}
+
+.cont-head h1 {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+#bookss h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 34px;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+#bookList {
+  text-align: center;
+  width: 50%;
+  border: 2px solid #000;
+  margin: 20px 25%;
+}
+
+.book-card {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: cursive;
+  width: 100%;
+}
+
+.book-card:nth-child(odd) {
+  background-color: #d3d3d3;
+}
+
+form {
+  margin: 40px 0;
+  width: 100%;
+}
+
+#bookForm {
+  width: 50%;
+  text-align: center;
+  margin: 30px 23%;
+  padding: 6px 0;
+}
+
+input {
+  padding: 20px 0;
+}
+
+#book-title {
+  width: 40%;
+  height: 35px;
+  border: 2px solid #000;
+  color: #272a31;
+  padding: 20px 12px;
+  margin-top: 30px;
+}
+
+#book-author {
+  width: 40%;
+  height: 35px;
+  border: 2px solid #000;
+  color: #272a31;
+  padding: 20px 12px;
 }
 
 #add {
-  margin-left: 140px;
-  border: 1px solid black;
-  box-shadow: 1px 4px;
+  border: 2px solid rgb(18, 16, 16);
+  height: 35px;
+  width: 85px;
+  margin-left: 28%;
 }
 
-form input {
-  border: 2px solid black;
+#add:hover {
+  background-color: rgb(35, 35, 33);
+  color: #fff;
+  cursor: pointer;
 }
 
-#remove {
-  margin-left: 180px;
-  border: 3px solid black;
-  box-shadow: 1px 4px;
+.btn {
+  width: 100px;
+  align-items: flex-end;
+  border: 2px solid rgb(46, 20, 20);
+  margin-left: 80%;
+  cursor: pointer;
+  background-color: rgb(247, 232, 232);
+  border-radius: 10px;
 }
 
-@media (min-width: 768px) {
-  .book-collection {
-    margin: 0 0 12px 12px;
-    align-items: center;
-  }
+.btn:hover {
+  background-color: rgb(215, 210, 210);
+  color: #fff;
+  transition: 0.5s all ease-in-out;
+  box-shadow:
+    0 5px 10px rgba(11, 10, 10, 0.82),
+    0 5px 10px rgba(68, 37, 37, 0.82),
+    0 5px 10px rgba(143, 49, 49, 0.82),
+    0 5px 10px rgba(32, 22, 22, 0.82);
+}
 
-  .book {
-    align-items: center;
-    margin-left: 350px;
-  }
+hr {
+  width: 10%;
+  border: 1px solid rgb(45, 18, 18);
+  height: 2px;
+  margin: 40px 45%;
+}
+
+.contact {
+  margin: 8% 0;
+  width: 100%;
+  text-align: center;
+}
+
+.cont-head {
+  width: 50%;
+  margin: 8% 25%;
+  text-align: center;
+}
+
+.cont-head p {
+  text-align: start;
+  font-size: 20px;
+  padding-left: 12px;
+  margin-bottom: 10px;
+  margin-left: 20%;
+}
+
+.cont-head ul {
+  text-align: start;
+  width: 60%;
+  margin: 20px 20%;
+  padding-left: 40px;
+  font-size: 20px;
+}
+
+#current-date {
+  float: right;
+  margin-right: 5%;
+}
+
+#copyright {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 3rem;
+}
+
+.copyright-paragraph {
+  border: 4px solid rgb(70, 61, 61);
+  padding: 1.5rem;
 }
