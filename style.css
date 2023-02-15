@@ -1,3 +1,78 @@
 * {
-  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.book-collection {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.line {
+  margin-top: 50px;
+  width: 90px;
+  font-weight: 900;
+  font-size: 10pt;
+}
+
+#books {
+  width: fit-content;
+  margin: 14px 14px 14px 224px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.book {
+  display: flex;
+  border: 1px solid rgb(15, 15, 15);
+  flex-direction: column;
+  align-content: center;
+}
+
+.book ul {
+  gap: 20px;
+  list-style: none;
+  margin: 12px 12px 12px 12px;
+  font-size: smaller;
+  font-weight: bold;
+}
+
+.book:nth-child(odd) {
+  background-color: #a3a2a2;
+}
+
+#add {
+  margin-left: 140px;
+  border: 1px solid black;
+  box-shadow: 1px 4px;
+}
+
+form input {
+  border: 2px solid black;
+}
+
+#remove {
+  margin-left: 180px;
+  border: 3px solid black;
+  box-shadow: 1px 4px;
+}
+
+@media (min-width: 768px) {
+  .book-collection {
+    margin: 0 0 12px 12px;
+    align-items: center;
+  }
+
+  .book {
+    align-items: center;
+    margin-left: 350px;
+  }
 }
